@@ -13,6 +13,14 @@ public class Member {
     @Name("name") // DB Member Table에서 해당 컬럼(name) 지정
     private String name;
 
+    public Member(){ // 기본 생성자
+    }
+
+
+    public Member(Long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 
     //Getter, Setter ...
 
